@@ -1,7 +1,8 @@
-let hash = window.location.hash.substr(1),
+let hash = location.search.slice(1),
+
 defaultImg = '1.jpg',
 possibleExtensions = [".jpg",".gif",".svg",".png"],
-targetFile = ""
+targetFile
 
 console.log(hash);
 
@@ -16,6 +17,24 @@ function doesFileExist(urlToFile) {
         return true;
     }
 }
+// function doesFileExist(filename) {
+// fetch(filename, {
+//     method: "head",
+//     mode: "no-cors"
+// }).then(function(response) {
+//     if (response.status == 200) {
+//         console.log("true");
+//         return true
+//     } else {
+//         console.log("false");
+//         return false
+//     }
+// })
+// .catch(function(error) {
+//     return false
+//   console.log("Error ", error);
+// });
+// }   
 // ///////////
 // function testImageExtension(hash) {
 //     if (doesFileExist(hash+".jpg")){
