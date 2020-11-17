@@ -1,6 +1,6 @@
 let hash = location.search.slice(1),
 
-defaultImg = 'default.jpg',
+defaultImg = 'default.png',
 possibleExtensions = [".jpg",".gif",".svg",".png"],
 targetFile
 
