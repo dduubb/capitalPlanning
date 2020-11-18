@@ -1,7 +1,7 @@
 let hash = location.search.slice(1),
 
 defaultImg = 'default.png',
-possibleExtensions = [".jpg",".gif",".svg",".png"],
+possibleExtensions = [".jpg",".gif",".svg",".png",".jfif"],
 targetFile
 
 console.log(hash);
